@@ -13,7 +13,8 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-23551028-1');
+  gtag('config', 'UA-23551028-1', {'custom_map': {'dimension1': 'custom_dimension_test', 'metric1': 'custom_metric_test'}});
+  gtag('event', 'event_test', {'custom_dimension_test': 'abc', 'custom_metric_test': 123});
 </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
